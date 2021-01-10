@@ -1,0 +1,43 @@
+name: Daily Check
+
+# Controls when the action will run.
+# 结合下面的if，只有自己点击star时，才会手动触发，
+on:
+  push:
+  schedule:
+    - cron: "3 0 * * *"
+  watch:
+    types: started
+  workflow_dispatch:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  Yqt_submit:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # 从该仓库clone代码到虚拟机
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: "Code Check"
+        uses: actions/checkout@v2
+
+      #安装python
+      - name: "Set Python"
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.x"
+
+      # Runs a set of commands using the runners shell
+      # 安装需要的python库
+      - name: "Install Dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade requests
+          python -m pip install --upgrade rsa
+
+      # 执行代码
+      - name: "Excute program"
+        run: |
+          python submit.py -u ${{secrets.DAILYCHECK_USERNAME}} -p ${{secrets.DAILYCHECK_PASSWORD}}
