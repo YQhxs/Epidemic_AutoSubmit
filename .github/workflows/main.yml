@@ -11,7 +11,6 @@ on:
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   Yqt_submit:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -35,9 +34,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install --upgrade requests
-          python -m pip install --upgrade rsa
-
       # 执行代码
       - name: "Excute program"
-        run: |
-          python submit.py -u ${{secrets.DAILYCHECK_USERNAME}} -p ${{secrets.DAILYCHECK_PASSWORD}}
+        run: python submit.py -u ${{secrets.DAILYCHECK_USERNAME}} -p ${{secrets.DAILYCHECK_PASSWORD}}
