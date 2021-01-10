@@ -53,7 +53,7 @@ if result.status_code != 200:
     print('认证失败')
     exit()
 
-# Submit
+# Get previous info submitted
 result = conn.get('https://xxcapp.xidian.edu.cn/ncov/wap/default/index')
 if result.status_code != 200:
     print('获取页面失败')
@@ -83,4 +83,12 @@ predef.update(data)
 
 result = conn.post(
     'https://xxcapp.xidian.edu.cn/ncov/wap/default/save', data=predef)
-print("提交结果："+result.text)
+print("疫情通提交结果："+result.text)
+
+# 晨午检
+data = {}
+with open("data_3chk.json", "r") as fd:
+    data = json.load(fd)
+result = conn.post(
+    'https://xxcapp.xidian.edu.cn/xisuncov/wap/open-report/save', data=data)
+print("晨午晚检提交结果"+result.text)

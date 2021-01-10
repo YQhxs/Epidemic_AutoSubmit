@@ -1,8 +1,9 @@
-以下都使用 GitHub Actions 自动填报,需要创建 secrets： DAILYCHECK_USERNAME 和 DAILYCHECK_PASSWORD
+以下都使用 GitHub Actions 自动填报，分别是每天的 8:03,13:03,19:03 时间。仓库需创建 secrets： DAILYCHECK_USERNAME 和 DAILYCHECK_PASSWORD
+晨午检和疫情通都在 submit.py 里如果想分开提交参照原作者
 
 # 疫情通
 
-1.使用 `python configure.py` 生成 data.json 文件 2.使用 `python submit.py -u [username] -p [password]` 提交；
+1.使用 `python configure.py` 生成 data.json 和 data_3chk.json 文件 2.使用 `python submit.py -u [username] -p [password]` 提交；
 
 ## Notes：
 
@@ -13,9 +14,6 @@ b.获取方式：
 
 # 晨午检
 
-先使用 configure_3chk.py 设置需要填报的信息
-然后使用 submit_3chk.py 提交，定位信息可用上面获取的
-
-注意在对应的时间段进行提交
+先使用 configure_3chk.py 设置需要填报的信息，定位信息可用上面获取的 geo_api_info，生成 data_3chk.json 文件
 
 原作者 Apache553/xidian-ncov-report
