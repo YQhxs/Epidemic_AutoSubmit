@@ -5,13 +5,13 @@ name: Daily Check
 on:
   push:
   schedule:
-    - cron: "3 0 * * *"
+    - cron: "3 0,5,11 * * *"
   watch:
     types: started
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  Yqt_submit:
+  Check_submit:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
