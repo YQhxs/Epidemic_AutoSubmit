@@ -1,13 +1,11 @@
 {
-  "sfzx": 0,
-  "fxyy": "",
-  "geo_api_info": "{\"type\":\"complete\",\"info\":\"SUCCESS\",\"status\":1,\"$Da\":\"jsonp_936429_\",\"position\":{\"Q\":33.8833,\"R\":115.50416000000001,\"lng\":115.50416,\"lat\":33.8833},\"message\":\"Get geolocation failed.Get ipLocation success.Get address success.\",\"location_type\":\"ip\",\"accuracy\":null,\"isConverted\":true,\"addressComponent\":{\"citycode\":\"0394\",\"adcode\":\"411628\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"\u5927\u95f8\u8def\",\"streetNumber\":\"60\u53f7\",\"country\":\"\u4e2d\u56fd\",\"province\":\"\u6cb3\u5357\u7701\",\"city\":\"\u5468\u53e3\u5e02\",\"district\":\"\u9e7f\u9091\u53bf\",\"township\":\"\u6da1\u5317\u9547\"},\"formattedAddress\":\"\u6cb3\u5357\u7701\u5468\u53e3\u5e02\u9e7f\u9091\u53bf\u6da1\u5317\u9547\u5bb6\u548c\u84b8\u83dc\u9986\u9e7f\u9091\u53bf\u6da1\u6cb3\u5317\u5cb8\",\"roads\":[],\"crosses\":[],\"pois\":[]}",
-  "address": "\u6cb3\u5357\u7701\u5468\u53e3\u5e02\u9e7f\u9091\u53bf\u6da1\u5317\u9547\u5bb6\u548c\u84b8\u83dc\u9986\u9e7f\u9091\u53bf\u6da1\u6cb3\u5317\u5cb8",
-  "area": "\u6cb3\u5357\u7701 \u5468\u53e3\u5e02 \u9e7f\u9091\u53bf",
-  "province": "\u6cb3\u5357\u7701",
-  "city": "\u5468\u53e3\u5e02",
-  "ismoved": 0,
-  "bztcyy": "",
+  "sfzx": 1,
+  "fxyy": "\u5f00\u5b66",
+  "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":34.128535698785,\"R\":108.83570231119802,\"lng\":108.835702,\"lat\":34.128536},\"location_type\":\"html5\",\"message\":\"Get geolocation success.Convert Success.Get address success.\",\"accuracy\":40,\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"029\",\"adcode\":\"610116\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"\u6d77\u68e0\u4e8c\u8def\",\"streetNumber\":\"252\u53f7\",\"country\":\"\u4e2d\u56fd\",\"province\":\"\u9655\u897f\u7701\",\"city\":\"\u897f\u5b89\u5e02\",\"district\":\"\u957f\u5b89\u533a\",\"township\":\"\u5174\u9686\u8857\u9053\"},\"formattedAddress\":\"\u9655\u897f\u7701\u897f\u5b89\u5e02\u957f\u5b89\u533a\u5174\u9686\u8857\u9053\u897f\u5b89\u7535\u5b50\u79d1\u6280\u5927\u5b66\u957f\u5b89\u6821\u533a\u6d77\u68e0\u516c\u5bd35\u53f7\u697c\u897f\u5b89\u7535\u5b50\u79d1\u6280\u5927\u5b66\u5357\u6821\u533a\",\"roads\":[],\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
+  "address": "\u9655\u897f\u7701\u897f\u5b89\u5e02\u957f\u5b89\u533a\u5174\u9686\u8857\u9053\u897f\u5b89\u7535\u5b50\u79d1\u6280\u5927\u5b66\u957f\u5b89\u6821\u533a\u6d77\u68e0\u516c\u5bd35\u53f7\u697c\u897f\u5b89\u7535\u5b50\u79d1\u6280\u5927\u5b66\u5357\u6821\u533a",
+  "area": "\u9655\u897f\u7701 \u897f\u5b89\u5e02 \u957f\u5b89\u533a",
+  "province": "\u9655\u897f\u7701",
+  "city": "\u897f\u5b89\u5e02",
   "zgfxdq": 0,
   "tw": 2,
   "sfcxtz": 0,
@@ -25,5 +23,5 @@
   "glksrq": "",
   "sfcxzysx": 0,
   "qksm": "",
-  "remark": "\u65e0"
+  "remark": " "
 }

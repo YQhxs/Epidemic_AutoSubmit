@@ -63,10 +63,10 @@ else:
         data["city"] = data["province"]
 
 # 当前地点与上次不在同一城市
-data.update({"ismoved": AskBoolean("当前地点与上次是否不在同一城市: "), "bztcyy": ""})
-if data["ismoved"] == 1:
-    data.update({"bztcyy": AskInteractive(
-        "当前地点与上次不在同一城市,原因如下: ", ["其他", "探亲", "旅游", "回家"])})
+# data.update({"ismoved": AskBoolean("当前地点与上次是否不在同一城市: "), "bztcyy": ""})
+# if data["ismoved"] == 1:
+#     data.update({"bztcyy": AskInteractive(
+#         "当前地点与上次不在同一城市,原因如下: ", ["其他", "探亲", "旅游", "回家"])})
 
 # 今日是否在中高风险地区
 data.update({"zgfxdq": AskBoolean("今日是否在中高风险地区：")})
